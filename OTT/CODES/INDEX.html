@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT PLATFORM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <style>
+       body{
+        background-color: black;
+      } 
+       *{
+        margin: 0;
+        /* background-color: black; */
+      
+
+       }
+        .navbar{
+            height: 100px;
+            width: 100%;
+            background-color:black;
+            border: solid black;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+           
+        }
+        /* img{
+           margin-top: 15px;
+           margin-left: 10px;
+           
+        } */
+        .navbar-items ul{
+            width: 1000px;
+             /* height: 50px;  */
+            display: flex;
+            justify-content:space-between;
+            font-size: 20px;
+             /* margin-left: 240px;  */
+            align-items: center;
+
+
+        }
+        a{
+            text-decoration: none;
+            color:rgb(106, 103, 103) ;
+            
+        }
+        a:hover{
+            color: white;
+         }
+      
+        .carousel-inner img{
+            height: 500px;
+            width: 1100px;
+            /* margin: 40px 80px; */
+            /* margin-right: 80px; */
+           
+        }
+        
+        .carousel-slide{
+           margin: 70px 70px;
+           padding-top: 80px;
+        }  
+     
+        .carousel-control-prev-icon{
+            margin-left: 150px;
+             margin-top: 120px;
+
+        }
+        .carousel-control-next-icon{
+            margin-right: 150px;
+             margin-top: 120px;
+
+        } 
+        h2{
+          color: whitesmoke;
+          display: inline;
+      
+        }
+        .recent{
+          padding-top: 100px;
+        }
+        .recent h2:hover{
+          text-decoration: underline;
+        }
+        .recent-image img{
+          height: 300px;
+          width: 220px;
+          
+        }
+        .recent-image{
+          margin-top: 10px;
+          height: 700px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .recent-image img:hover{
+          scale: 1.2;
+          transition: all .2s ease-in;
+          border-radius: 10px;
+        }
+        .most{
+          padding-top: 100px;
+        }
+        .most-images img{
+          height: 300px;
+          width: 220px;
+        }
+        .most-images{
+          margin-top: 10px;
+          height: 700px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-around;
+
+        }
+        .most-images img:hover{
+          scale: 1.2;
+          transition: all .2s ease-in;
+          border-radius: 10px;
+
+        }
+        .most-title h2:hover{
+          text-decoration: underline;
+        }
+        .top{
+          padding-top: 100px;
+        }
+        .top-image img{
+          height: 300px;
+          width: 220px;
+
+        }
+        .top-image{
+          margin-top: 10px;
+          height: 700px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-around;
+
+        }
+        .top-image img:hover{
+          scale: 1.2;
+          transition: all .2s ease-in;
+          border-radius: 10px;
+        }
+        .top-title h2:hover{
+          text-decoration: underline;
+        }
+        .text-center-text-lg-start-bg-white-text-muted{
+          background-color: black;
+          color: white;
+          padding-top: 60px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <div class="navbarlogo">
+        <img src="https://seeklogo.com/images/H/hotstar-logo-6A3E165CC3-seeklogo.com.png" height="70px" width="70px" alt="">
+    </div>
+
+    <div class="navbar-items">
+        <ul type="none">
+            <li><a href="#carouselExampleAutoplaying" id="a">HOME</a></li>
+            <li><a href="#recent" id="b">RECENTLY ADDED </a></li>
+            <li><a href="#most-watched" id="c">MOST WATCHED</a></li>
+            <li><a href="#top" id="d">TOP MOVIES</a></li>
+            <li><a href="sign.html" id="aa">SIGN IN</a></li>
+            <li><a href="#about" id="z6">ABOUT</a></li>
+        </ul>
+    </div>
+    </div>
+    <!-- home section start -->
+
+      <div id="carouselExampleAutoplaying" class="carousel-slide" data-bs-ride="carousel" data-bs-interval="1000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/7629/1507629-i-37ad3cb4c561" class="d-block " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/8689/1508689-i-6d6ae7a67470" class="d-block " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/370/1500370-i-a5609b251499" class="d-block " alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
+     <!-- home section end  -->
+     <!-- recently added section start  -->
+    <div class="recent" id="recent">
+      <div class="recent-title">
+      <h2>Recently Added</h2>
+      </div>
+      <div class="recent-image">
+       <img src="C:\Users\HP\Documents\projects\OTT\images\m1.jpg" alt="">
+       <img src="C:\Users\HP\Documents\projects\OTT\images\m2.webp" alt="">
+       <img src="C:\Users\HP\Documents\projects\OTT\images\m3.jpg" alt="">
+       <img src="C:\Users\HP\Documents\projects\OTT\images\m4.avif" alt="">
+       <img src="C:\Users\HP\Documents\projects\OTT\images\m5.jpg" alt="">
+      
+        <img src="https://igimages.gumlet.io/telugu/gallery/movies/macherlaniyojakavargam/poster.jpg?w=160&dpr=2.6" alt="">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/jioimage/98/35/d2dd37d02de311e9a4d71726210f0209_1549975515766_p.jpg" alt="">
+        <img src="https://v3img.voot.com/resizeMedium,w_810,h_1080/jioimage/71/3/2d1a3ee0c2c611ebad1619ca96fe25b8_1622615027438_p.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Sita_Ramam.jpg/220px-Sita_Ramam.jpg" alt="">
+        <img src="https://static.toiimg.com/thumb/msid-77457365,width-219,height-317,imgsize-13568/77457365.jpg" alt="">
+       
+      </div>
+    </div>
+     <!-- recently added section ends -->
+     <!-- most watched section start  -->
+    <div class="most" id="most-watched">
+      <div class="most-title">
+        <h2>Most Watched</h2>
+      </div>
+      <div class="most-images">
+        <img src="https://www.91-cdn.com/hub/wp-content/uploads/2021/06/Chhichhore-top-hotstar-movies-Hindi.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Pathaan_film_poster.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/40/Brahmastra_Teaser.jpeg" alt="">
+        <img src="https://m.timesofindia.com/thumb.cms?msid=88016176&width=200&height=281" alt="">
+        <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202212/Tu-Jhoothi-Main-Makkaar_1671618072.jpg" alt="">
+        <img src="https://images004-a.erosnow.com/movie/8/1000378/img145210/6984260/1000378_6984260.jpg" alt="">
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/geetha-govindam-et00078428-25-06-2018-12-57-41.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Googly_2013_Kannada_Film.jpg" alt="">
+        <img src="https://static.toiimg.com/thumb/msid-65337984,width-219,height-317,imgsize-59568/65337984.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/2014_Kannada_film_Mr._and_Mrs._Ramachari_poster.jpg" alt="">
+      </div>
+    </div>
+    <!-- most watched section ends  -->
+    <!-- top section starts  -->
+    <div class="top" id="top">
+      <div class="top-title">
+         <h2>Top Movies</h2>
+      </div>
+      <div class="top-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtHleTX9VvXzHdlBPlHLwlBxq0IcnCF_ic_Y4p5Gjic6in_vQvL7Cu-ghrW2zSEDFEHaQ&usqp=CAU" alt="">
+        <img src="https://karnatakastateopenuniversity.in/wp-content/uploads/2023/02/Mission-Majnu.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/M/MV5BOGEzYzcxYjAtZmZiNi00YzI0LWIyY2YtOTM0MDFjODU2YTZiXkEyXkFqcGdeQXVyMTQ3Mzk2MDg4._V1_.jpg" alt="">
+        <img src="https://static.toiimg.com/thumb/msid-61968870,width-219,height-317,imgsize-33854/61968870.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/M/MV5BZDFmNmE2OTYtYmUxOC00ZjE0LWE4ZWEtNzdiMjYxMjIwMzBhXkEyXkFqcGdeQXVyODA4MDA0Mjg@._V1_.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/93/Baahubali_2_The_Conclusion_poster.jpg" alt="">
+        <img src="https://static.toiimg.com/thumb/msid-68387961,width-219,height-317,imgsize-84855/68387961.jpg" alt="">
+        <img src="https://www.filmibeat.com/img/popcorn/movie_posters/kranti-20220216101640-20355.jpg" alt="">
+        <img src="https://www.5moviesrulz.com/images/20220908-Vikrant-Rona-Kannada-Poster.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/M/MV5BZmFmOWRlODAtZTIzMS00OGY1LWI0ZWQtNzBhNzc0Yjg2OTRiXkEyXkFqcGdeQXVyMTA1NzEzOTU1._V1_.jpg" alt="">
+      </div> 
+
+    </div>
+    <!-- top section end -->
+    <!-- about section start -->
+    <!-- Footer -->
+<footer class="text-center-text-lg-start-bg-white-text-muted" id="about">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+          </svg>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            info@example.com
+          </p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <!-- about section ends -->
+  </div>
+
+</body>
+</html>
